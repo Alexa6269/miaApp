@@ -1,12 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Botton, Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text> App en construcción</Text>
-      <StatusBar style="auto" />
+      <View style={styles.inputContainer}>
+        <TextInput style={styles.input} placeholder='Añadir nueva tarea'/>
+        <Button title='Añadir' color='#FA9938'/>
+      </View>
     </View>
   );
 }
@@ -14,8 +16,16 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#fff'
   },
+  inputContainer:{
+    margin: 50,
+    marginHorizontal:20,
+  },
+  input:{
+    borderBottomColor:'#A52742',
+    borderBottomWidth:1 ,
+    height:40,
+    marginBottom:20,
+  }
 });
