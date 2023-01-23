@@ -21,11 +21,14 @@ const styles = StyleSheet.create({
   inputContainer:{
     margin: 50,
     marginHorizontal:20,
+    flexDirection:'row',
+    justifyContent: 'space-around'
   },
   input:{
+    width: '75%',
     borderBottomColor:'#A52742',
     borderBottomWidth:1 ,
     height:40,
-    marginBottom:20,
+
   }
 });
